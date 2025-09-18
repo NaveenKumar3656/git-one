@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Villa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #ff6600;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      background: #ff6600;
+    }
+    section {
+      padding: 2rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    label {
+      margin: 0.5rem 0 0.2rem;
+    }
+    input, textarea, button {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #ff6600;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e65c00;
+    }
+    hr {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Spice Villa</h1>
+    <p>Your Destination for Authentic Flavors</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#timings">Timings</a></li>
+      <li><a href="#reservation">Reservation</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section id="banner">
+    <h2>Welcome to Spice Villa</h2>
+    <p>Experience the taste of tradition and spices from around the world.</p>
+    <img src="https://via.placeholder.com/1200x400" alt="Spice Villa Banner">
+  </section>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <h3>Chef's Signature Dish</h3>
+    <blockquote>"Cooking is love made visible."</blockquote>
+    <h4>Best-Selling Dishes:</h4>
+    <ol>
+      <li>Butter Chicken</li>
+      <li>Paneer Tikka Masala</li>
+      <li>Hyderabadi Biryani</li>
+    </ol>
+    <h4>Cuisines Offered:</h4>
+    <ul>
+      <li>Indian</li>
+      <li>Chinese</li>
+      <li>Continental</li>
+    </ul>
+    <h4>Special Dishes:</h4>
+    <dl>
+      <dt>Mango Lassi</dt>
+      <dd>A sweet, creamy drink made with fresh mangoes and yogurt.</dd>
+      <dt>Masala Dosa</dt>
+      <dd>A crispy crepe filled with spiced potatoes and served with chutney.</dd>
+    </dl>
+  </section>
+
+  <hr>
+
+  <!-- Timings Section -->
+  <section id="timings">
+    <h2>Opening Hours</h2>
+    <table>
+      <caption>Weekly Timings</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Lunch</th>
+          <th>Dinner</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>12 PM - 3 PM</td>
+          <td>7 PM - 11 PM</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>12 PM - 3 PM</td>
+          <td>7 PM - 11 PM</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Closed</td>
+          <td>Closed</td>
+          <td>Closed</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>12 PM - 3 PM</td>
+          <td>7 PM - 11 PM</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>12 PM - 3 PM</td>
+          <td>7 PM - 11 PM</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>12 PM - 3 PM</td>
+          <td>7 PM - 12 AM</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>12 PM - 3 PM</td>
+          <td>7 PM - 12 AM</td>
+          <td>Open</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- Reservation Section -->
+  <section id="reservation">
+    <h2>Make a Reservation</h2>
+    <form>
+      <label for="name">Name*:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email*:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone*:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="date">Reservation Date*:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Reservation Time*:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="guests">Number of Guests*:</label>
+      <input type="number" id="guests" name="guests" required>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- Location Section -->
+  <section id="location">
+    <h2>Find Us</h2>
+    <p>123 Spice Street, Flavor Town, Country</p>
+    <img src="https://via.placeholder.com/800x400" alt="Spice Villa Location Map">
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Spice Villa | Contact: info@spicevilla.com | Phone: 123-456-7890</p>
+  </footer>
+
+</body>
+</html>
